@@ -3,6 +3,11 @@ var app = require('express')(),
     io = require('socket.io')(http),
     fs = require('fs');
 
+if (process.argv.length < 4) {
+  console.log("Usage: node index.js [filename] [port]");
+  process.exit(-1);
+}
+
 var filename = process.argv[2],
     port = process.argv[3];
 
