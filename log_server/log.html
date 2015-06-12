@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Logs</title>
+  </head>
+  <body>
+    <pre id="logs">
+      I will be populated.
+    </pre>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io();
+      var logs = document.getElementById("logs");
+      socket.on('initial log', function(msg) {
+        logs.innerHTML = msg;
+      });
+      socket.on('chunk', function(msg) {
+        logs.innerHTML += msg;
+      });
+    </script>
+  </body>
+</html>

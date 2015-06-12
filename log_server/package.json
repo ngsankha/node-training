@@ -1,0 +1,9 @@
+{
+  "name": "logserver",
+  "version": "0.0.1",
+  "description": "broadcast logs over http",
+  "dependencies": {
+    "express": "latest",
+    "socket.io": "latest"
+  }
+}
