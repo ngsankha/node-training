@@ -4,6 +4,7 @@
   "description": "broadcast logs over http",
   "dependencies": {
     "express": "latest",
-    "socket.io": "latest"
+    "socket.io": "latest",
+    "byline": "latest"
   }
 }
